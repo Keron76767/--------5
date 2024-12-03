@@ -1,0 +1,10 @@
+﻿Написать функцию, которая принимает массив любых целых чисел и возвращает истину, если все элементы четные. Если имеется хотя бы один элемент не четный, то false. (every)
+<script>
+    function areAllEven(arr) {
+        return arr.every(elem => elem % 2 == 0)
+    }
+
+    let numbers = [2, 4, 6, 8, 10];
+    console.log("Исходный массив:", numbers);
+    console.log("Все элементы четные:", areAllEven(numbers));
+</script>

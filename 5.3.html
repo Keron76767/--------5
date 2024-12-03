@@ -1,0 +1,10 @@
+﻿Написать функцию, которая принимает массив любых целых чисел, и возвращает новый массив из элементов переданного массива, кратных пяти. ([1,2,5,12,15,21] вернет [5,15]) (filter)
+<script>
+    function getMultiplesOfFive(arr) {
+        return arr.filter(number => number % 5 === 0);
+    }
+
+    let numbers = [1, 2, 5, 12, 15, 21];
+    console.log("Исходный массив:", numbers);
+    console.log("Элементы, кратные 5:", getMultiplesOfFive(numbers));
+</script>

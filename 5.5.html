@@ -1,0 +1,7 @@
+﻿Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://. (filter,startsWith)
+<script>
+    let strings = ["http://example.com", "https://secure.com", "ftp://ftp-server.com", "http://another.com"];
+    let httpStrings = strings.filter(str => str.startsWith("http://"));
+    console.log("Исходный массив:", strings);
+    console.log("Строки, начинающиеся на http://:", httpStrings);
+</script>

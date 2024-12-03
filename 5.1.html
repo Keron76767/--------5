@@ -1,0 +1,13 @@
+﻿Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти. (filter)
+<script>
+    let numbers = [1, 5, 8, 12, 4, 6, 2, 9, 11, 15];
+    let sumAR = numbers.filter(index => index > 0 && index < 10);
+    let sum = 0;
+
+    for (let number of sumAR) {
+        sum += number;
+    }
+
+    console.log("Исходный массив:", numbers);
+    console.log("Сумма элементов от 0 до 10:", sum);
+</script>
